@@ -9,14 +9,18 @@
    */
 int main(void)
 {
-      char low;
+    char letter;
 
-      for (low = 'a'; low <= 'z'; low++)
-      {
-          putchar(low);
-      }
+    for (letter = 'a'; letter <= 'z'; letter++)
+    {
+        if (letter == 'e' || letter == 'q')
+        {
+            continue;
+        }
+        putchar(letter);
+    }
 
-      putchar('\n');
+    putchar('\n');
 
-      return 0;
+    return (0);
 }
